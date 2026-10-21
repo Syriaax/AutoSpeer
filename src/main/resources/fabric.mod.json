@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "autospeer",
+	"version": "${version}",
+	"name": "Auto Speer",
+	"description": "Hold F: charges on the water bucket, swaps to the spear and stabs in the same tick for a fast Lunge.",
+	"authors": [
+		"Syriaax"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.autospeer.AutoSpeerClient"
+		]
+	},
+	"mixins": [
+		"autospeer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
